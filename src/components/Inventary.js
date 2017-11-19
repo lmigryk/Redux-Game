@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Table, Button } from 'react-materialize';
 import store from '../store';
+import {deleteItem} from '../action';
 const styles = {
   footer: {
     fontWeight: 'bold'
@@ -55,10 +56,7 @@ class Inventary extends Component {
   }
 
   deleteItem(item) {
-    store.dispatch({
-      type: "DELETE_TO_INVENTARY",
-      item
-    })
+    store.dispatch(deleteItem(item))
   }
 }
 

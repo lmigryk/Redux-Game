@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button} from 'react-materialize';
 import store from '../store'; 
+import { addToInventary } from '../action';
 
 const styles = {
   items: {
@@ -29,7 +30,7 @@ const styles = {
 class ItemList extends Component {
   constructor() {
     super();
-    this.addToInventory = this.addToInventory.bind(this);
+    this.addToInventary = this.addToInventary.bind(this);
 
     this.state = {
       items: [
@@ -55,7 +56,7 @@ class ItemList extends Component {
             <div className="caption">
               <h4>{item.name}</h4>
               <p>
-                <Button style={styles.button} type="submit" onClick={() => this.addToInventory(item)} role="button" >RU{item.price}</Button>
+                <Button style={styles.button} type="submit" onClick={() => this.addToInventary(item)} role="button" >RU{item.price}</Button>
               </p>
             </div>
           </div>
@@ -64,11 +65,8 @@ class ItemList extends Component {
     );
   }
 
-  addToInventory(item) {
-    store.dispatch({
-      type: "ADD_TO_INVENTARY",
-      item
-    })
+  addToInventary(item) {
+    store.dispatch(addToInventary(item))
   }
 }
 
