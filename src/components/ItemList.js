@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Button} from 'react-materialize';
-import store from '../store'; 
+import store from '../reducer'; 
 import { addToInventary } from '../action';
+import {connect} from 'react-redux';
 
 const styles = {
   items: {
@@ -71,3 +72,4 @@ class ItemList extends Component {
 }
 
 export default ItemList;
+
