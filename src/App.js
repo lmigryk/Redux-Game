@@ -15,11 +15,11 @@ class App extends Component {
           <NavItem >Components</NavItem>
         </Navbar>
           <Row>
-            <Col s={8}> 
+            <Col s={7}> 
               <ItemList /> 
             </Col>
             
-            <Col s={4}> 
+            <Col s={5}> 
               <Inventary /> 
             </Col>
           </Row>

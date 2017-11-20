@@ -6,6 +6,9 @@ import {connect} from 'react-redux';
 const styles = {
   footer: {
     fontWeight: 'bold'
+  },
+  button:{
+    marginLeft: 50,    
   }
 }
 
@@ -19,7 +22,8 @@ const Inventary = (props) => {
           <tr key={item.id}>
             <td>{item.name}</td>
             <td className="text-right">RU{item.price}</td>
-            <td className="text-right"><Button   onClick={() => props.deleteItem(item)}>Delete</Button></td>
+            
+            <td className="text-right"  ><Button  onClick={() => props.deleteItem(item)}>Delete</Button></td>
           </tr>
         )}
       </tbody>
