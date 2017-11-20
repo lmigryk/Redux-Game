@@ -16,7 +16,7 @@ const styles = {
 const Inventary = (props) => {
   return (
     <Table className="striped">
-      <h1>Inventary</h1>
+      <h1>Inventory</h1>
       <tbody>
         {props.cart.map(item =>
           <tr key={item.id}>
