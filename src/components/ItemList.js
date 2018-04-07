@@ -41,7 +41,7 @@ class ItemList extends Component {
         { id: 5, name: "Helmet of Atenea", price: 850, image: "casco2.jpg" },
         { id: 6, name: "Helmet of Pitufino", price: 1050, image: "casco3.jpg" },
         { id: 7, name: "Bladex", price: 5000, image: "espada1.jpeg" },
-        { id: 8, name: "Snow", price: 2200, image: "espada2.jpeg" },
+        { id: 8, name: "Snow", price: 2222, image: "espada2.jpeg" },
         { id: 9, name: "Winter", price: 9900, image: "espada3.jpeg" },
       ]
     }
